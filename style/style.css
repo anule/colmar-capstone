@@ -1,0 +1,20 @@
+header, div, img, span, nav, a, section, h1, h3, h4, p, button, h2, ul, li, footer {
+  border: 1px solid black;
+}
+/* Universal styling */
+html {
+  font-size: 14px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 64px;
+}
+
+/* Logo */
+.logo img {
+  width: 3rem;
+}
