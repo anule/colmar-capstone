@@ -3,7 +3,8 @@ header, div, img, span, nav, a, section, h1, h3, h4, p, button, h2, ul, li, foot
 }
 /* Universal styling */
 html {
-  font-size: 14px;
+  font-size: 16px;
+  font-family: sans-serif;
 }
 
 /* Header */
@@ -15,6 +16,57 @@ header {
 }
 
 /* Logo */
+.logo {
+  margin-left: 24px;
+  display: flex;
+}
 .logo img {
-  width: 3rem;
+  width: 3.5rem;
+}
+
+.logo span {
+  font-size: 2rem;
+  text-align: center;
+  align-self: center;
+  text-transform: uppercase;
+}
+
+/* Navigation */
+.mobile-nav {
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav span {
+  margin: 0 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #00070d;
+}
+
+@media only screen and (max-width: 480 px) {
+  nav span a {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: inline;
+  }
+
+  .logo span {
+    display: none;
+  }
+}
+
+/* Jumbotron */
+.jumbotron {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #7f8286;
 }
