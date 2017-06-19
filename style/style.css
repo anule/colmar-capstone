@@ -13,6 +13,7 @@ header {
   justify-content: space-between;
   align-content: center;
   height: 64px;
+  width: 100%;
 }
 
 /* Logo */
@@ -50,7 +51,7 @@ nav a {
   color: #00070d;
 }
 
-@media only screen and (max-width: 480 px) {
+@media only screen and (max-width: 480px) {
   nav span a {
     display: none;
   }
@@ -67,6 +68,72 @@ nav a {
 /* Jumbotron */
 .jumbotron {
   display: flex;
-  justify-content: flex-start;
-  background-color: #7f8286;
+  padding: 2rem 1.5rem;
+  background-color: lightgray;
+}
+
+.jumbotron img {
+  width: 60%;
+  height: 60%;
+}
+
+#button-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 2.5rem;
+}
+
+#button-section h1 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+#button-section p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+#button-section button {
+  background-color: rgb(18, 15, 14);
+  padding: 0.5rem 0;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 480px){
+  .jumbotron {
+    padding: 2rem 1rem;
+  }
+
+  .jumbotron img {
+    display: none;
+  }
+
+  #button-section {
+    margin: 0;
+  }
+
+  #button-section h1 {
+    margin-bottom: 2rem;
+  }
+
+  #button-section p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Admissions */
+#admissions {
+  display: flex;
+  padding: 2rem 1.5rem;
+}
+
+#main-image {
+  width: 60%;
+}
+
+#main-image img {
+  width: 100%;
 }
