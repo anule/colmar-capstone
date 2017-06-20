@@ -7,6 +7,10 @@ html {
   font-family: sans-serif;
 }
 
+aside {
+  display: flex;
+}
+
 /* Header */
 header {
   display: flex;
@@ -127,13 +131,124 @@ nav a {
 /* Admissions */
 #admissions {
   display: flex;
-  padding: 2rem 1.5rem;
 }
 
 #main-image {
   width: 60%;
+  padding: 2rem 1.5rem;
 }
 
 #main-image img {
   width: 100%;
+}
+
+#main-image h2 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+#main-image p {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#main-image span {
+  font-size: 0.75rem;
+}
+
+/* Admissions Sidebar */
+.admissions-image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 26.44rem;
+  padding: 1rem;
+}
+.admissions-image-container img{
+  width: 35%;
+  height: 35%;
+}
+
+.sidebar-text {
+  flex-direction: column;
+  flex-wrap: wrap;
+  float:right;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.sidebar-text h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.sidebar-text span {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.sidebar-text a {
+  text-decoration: none;
+}
+
+.side-admissions-bar :hover {
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 480px) {
+  #main-image {
+    display: none;
+  }
+
+  .admissions-image-container {
+    width: 100%;
+  }
+  .admissions-image-container {
+    flex-direction: column;
+  }
+  .admissions-image-container img {
+    width: 90%;
+  }
+}
+
+/* Classes */
+#classes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: lightgray;
+  padding: 2rem 0;
+}
+
+#classes h1 {
+  width: 100%;
+  text-align:center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.classes-image-container {
+  margin: 0 1rem;
+  display: inline;
+}
+
+.classes-image-container img {
+  height: 10.75rem;
+}
+
+.classes-image-container h4 {
+  font-weight: 1rem;
+  padding: 1rem;
+}
+
+.classes-image-container span {
+  display: block;
+  padding-left: 1rem;
+  word-wrap: break-word;
+}
+
+.all-caps {
+  text-transform: uppercase;
+  padding: 0.5rem 0;
 }
