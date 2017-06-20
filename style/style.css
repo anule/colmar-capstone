@@ -4,7 +4,7 @@ header, div, img, span, nav, a, section, h1, h3, h4, p, button, h2, ul, li, foot
 /* Universal styling */
 html {
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 aside {
@@ -73,7 +73,7 @@ nav a {
 .jumbotron {
   display: flex;
   padding: 2rem 1.5rem;
-  background-color: lightgray;
+  background-color: rgb(193,205,212);
 }
 
 .jumbotron img {
@@ -193,7 +193,7 @@ nav a {
 }
 
 .side-admissions-bar :hover {
-  background-color: lightgray;
+  background-color: rgba(70,89,102, 0.5);
 }
 
 @media only screen and (max-width: 480px) {
@@ -217,8 +217,8 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: lightgray;
-  padding: 2rem 0;
+  background-color: rgb(193,205,212);
+  padding: 2rem;
 }
 
 #classes h1 {
@@ -229,26 +229,59 @@ nav a {
 }
 
 .classes-image-container {
-  margin: 0 1rem;
+  margin: 1rem;
   display: inline;
+  width: 25%;
+  background-color: #ffffff;
 }
 
 .classes-image-container img {
   height: 10.75rem;
+  width: 100%;
 }
 
 .classes-image-container h4 {
-  font-weight: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
   padding: 1rem;
 }
 
 .classes-image-container span {
   display: block;
   padding-left: 1rem;
-  word-wrap: break-word;
+  color: grey;
 }
 
 .all-caps {
   text-transform: uppercase;
   padding: 0.5rem 0;
+}
+
+.classes-image-container :last-child {
+  padding-bottom: 1rem;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 480px) {
+  #classes {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+  }
+  #classes h1 {
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+  }
+  .classes-image-container {
+    width: 100%;
+    margin: 0.5rem 1rem;
+    background-color: rgba(126, 138, 145,0.4);
+  }
+  .classes-image-container h4 {
+    font-weight: 400;
+  }
+  .classes-image-container img, .classes-image-container span {
+    display: none;
+  }
 }
