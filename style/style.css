@@ -1,6 +1,6 @@
-header, div, img, span, nav, a, section, h1, h3, h4, p, button, h2, ul, li, footer {
+/*header, div, img, span, nav, a, section, h1, h3, h4, p, button, h2, ul, li, footer {
   border: 1px solid black;
-}
+}*/
 /* Universal styling */
 html {
   font-size: 16px;
@@ -367,4 +367,21 @@ nav a {
   .video-container video {
     margin: 0;
   }
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1.5rem;
+  font-size: 0.75rem;
+  opacity: 0.7;
+  height: 4rem;
+}
+
+footer ul li {
+  display: inline;
+  text-decoration: none;
+  font-size: 0.75rem;
+  opacity: 0.7;
 }
