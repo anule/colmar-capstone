@@ -2,9 +2,33 @@
   border: 1px solid black;
 }*/
 /* Universal styling */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v16/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v16/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v16/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 html {
   font-size: 16px;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 aside {
@@ -36,6 +60,11 @@ header {
   text-transform: uppercase;
 }
 
+#light {
+  font-weight: 300;
+  opacity: 0.5;
+}
+
 /* Navigation */
 .mobile-nav {
   display: none;
@@ -52,7 +81,8 @@ nav span {
 
 nav a {
   text-decoration: none;
-  color: #00070d;
+  color: black;
+  opacity: 0.7;
 }
 
 @media only screen and (max-width: 480px) {
@@ -264,7 +294,7 @@ nav a {
 .classes-image-container span {
   display: block;
   padding-left: 1rem;
-  color: grey;
+  opacity: 0.5;
 }
 
 .all-caps {
@@ -341,22 +371,25 @@ nav a {
 .thesis-image-container {
   display: flex;
   height: 10.5rem;
-  padding: 1rem;
 }
 .thesis-image-container img {
   width: 35%;
+  height: auto;
+  padding: 1rem;
 }
 .thesis-sidebar-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   margin: 1.5rem 1rem;
 }
 .thesis-sidebar-text h4 {
   font-size: 1.25rem;
+  padding: 1rem 0;
+  text-align: left;
 }
 .thesis-sidebar-text span {
-  color: gray;
+  opacity: 0.5;
 }
 
 @media only screen and (max-width: 480px) {
@@ -396,9 +429,14 @@ footer {
 
 footer ul li {
   display: inline;
-  text-decoration: none;
   font-size: 0.75rem;
   opacity: 0.7;
+  font-weight: 300;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #000000;
 }
 
 @media only screen and (max-width: 480px) {
