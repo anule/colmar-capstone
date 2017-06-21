@@ -56,14 +56,22 @@ nav a {
 }
 
 @media only screen and (max-width: 480px) {
+  header {
+    justify-content: center;
+  }
   nav span a {
     display: none;
   }
 
   .mobile-nav {
     display: inline;
+    width: 3.5rem;
   }
 
+  .logo img {
+    width: 2rem;
+    margin-right: 2rem;
+  }
   .logo span {
     display: none;
   }
@@ -108,15 +116,17 @@ nav a {
 
 @media only screen and (max-width: 480px){
   .jumbotron {
-    padding: 2rem 1rem;
+    flex-direction: column;
   }
 
   .jumbotron img {
-    display: none;
+    height: 11.25rem;
+    width: 100%;
+    margin: 0;
   }
 
   #button-section {
-    margin: 0;
+    padding: 2rem 1rem;
   }
 
   #button-section h1 {
@@ -200,15 +210,20 @@ nav a {
   #main-image {
     display: none;
   }
-
-  .admissions-image-container {
-    width: 100%;
+  .side-admissions-bar {
+    margin-bottom: 2rem;
   }
   .admissions-image-container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
     flex-direction: column;
   }
   .admissions-image-container img {
-    width: 90%;
+    width: 80%;
+    height: 11rem;
+    margin: 1rem;
+    align-self: center;
   }
 }
 
